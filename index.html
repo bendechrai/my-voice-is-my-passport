@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+    <style>
+      .container{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+      .col{
+        fex: 1;
+      }
+      img {
+        height: 400px;
+      }
+      .col.middle {
+        margin: auto 0;
+      }
+      .col.bottom {
+        margin-top: auto;
+      }
+      img.thumbnail {
+        height: 150px;
+      }
+    </style>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+        <section>
+          <section>
+            <h1>My Voice is my Passport.</h1>
+            <h2>Verify Me?</h2>
+          </section>
+          <section data-background-video="http://techslides.com/demos/sample-videos/small.mp4,http://techslides.com/demos/sample-videos/small.webm" data-background-video-loop>
+            Audio and internet connectivity test
+          </section>
+        </section>
+
+        <section data-background-video="/videos/sneakers.mp4,/videos/sneakers.webm"></section>
+
+        <section>
+
+          <section>
+            <h2>Factors of Authentication</h2>
+            <aside class="notes">
+              Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+            </aside>
+          </section>
+
+          <section>
+            <h2>Something you...</h2>
+            <div class="container">
+              <div class="col fragment">
+                <p>Know</p>
+                <p><img data-src="/images/know.png"/></p>
+              </div>
+              <div class="col fragment">
+                <p>Have</p>
+                <p><img data-src="/images/have.png"/></p>
+              </div>
+              <div class="col fragment">
+                <p>Are</p>
+                <p><img data-src="/images/are.png"/></p>
+              </div>
+            </div>
+          </section>
+          
+          <section>
+            <h2>Something you Know</h2>
+            <div class="container">
+              <div class="col fragment">
+                <ul>
+                  <li>Passwords</li>
+                  <li>PINs</li>
+                  <li>Swipe Patterns</li>
+                  <li>Secret Knocks</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>Remember</li>
+                  <li>Password Manager</li>
+                  <li>Write it Down</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>Surveillance</li>
+                  <li>Interception</li>
+                  <li>Social Engineering</li>
+                  <li>Easily Digitised</li>
+                  <li>...</li>
+                  <li class="fragment">Reused</li>
+                </ul>
+              </div>
+            </div>
+
+            <aside class="notes">
+              <p>... remeber your best friend's name</p>
+              <p>... remember the names of a group of people you know</p>
+              <p>... remember the names of everyone in your company</p>
+              <p>Humans are bad at remembering - biggest issue is passwords are reused</p>
+            </aside>
+          </section>
+          
+          <section>
+            <h2>Something you Have</h2>
+            <div class="container">
+              <div class="col fragment">
+                <ul>
+                  <li>Building Access Cards</li>
+                  <li>SMS Verification</li>
+                  <li>Security Fobs</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>Physical Ownership</li>
+                  <li>Harder to Clone</li>
+                  <li>Assure Authentication as Second Factor</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>SS7 hacks</li>
+                </ul>
+              </div>
+            </div>
+
+            <aside class="notes">
+              <p>SS7 - Signalling System #7</p>
+              <p>May 2017, Telefónica Germany confirmed SS7 used to bypass 2FA - unauth bank acc withdrawals</p>
+            </aside>
+          </section>
+          
+          <section>
+            <h2>Something you Are</h2>
+            <p>Body Measurements and Characteristics; also known as Biometric Data</p>
+            <div class="container">
+              <div class="col fragment">
+                <ul>
+                  <li>Fingerprints</li>
+                  <li>Facial Recognition</li>
+                  <li>Retinal Scans</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>Voice</li>
+                  <li>Handprints</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>Keystroke Timing</li>
+                  <li>Handwriting</li>
+                  <li>Gait</li>
+                </ul>
+              </div>
+            </div>
+
+            <aside class="notes">
+              <p>Keystroke Timing - used by the Special Operations Executive (SOE) in WW2 to </p>
+              <p>As an aside -- these are also used to track you!</p>
+            </aside>
+          </section>
+          
+          <section>
+            <h2>Something you Are - Vulnerabilties</h2>
+            <div class="container">
+              <div class="col fragment">
+                <ul>
+                  <li>Chopping off Fingers!</li>
+                  <li>Lifting Prints</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>Voice Generators</li>
+                  <li>3D Printing Faces</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>High Resolution Photos</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+        </section>
+
+        <section>
+
+          <section>
+            <h2>Multiple Factors of Authentication</h2>
+            <h3 class="fragment">Identification versus Authentication</h3>
+            <div class="container">
+              <div class="col fragment">
+                <p><img data-src="/images/id-card.png"/></p>
+                <p>Unique to you</p>
+              </div>
+              <div class="col fragment">
+                <p><img data-src="/images/password.jpg"/></p>
+                <p>Could be used by someone else</p>
+              </div>
+            </div>
+
+            <aside class="notes">
+              <p>Username is identifier, password is authentication.</p>
+              <p>Building access card = ID + Auth</p>
+            </aside>
+          </section>
+
+          <section data-transition="none">
+            <h2>Multiple Factors of Authentication</h2>
+            <h3>Identification versus Authentication</h3>
+            <div class="container">
+              <div class="col">
+                <p><img data-src="/images/id-card.png"/></p>
+              </div>
+              <div class="col middle">
+                <p>We need at least one identifying factor</p>
+              </div>
+            </div>
+
+            <aside class="notes">
+              <p>Second factor is authentications - no identification process.</p>
+              <p>Is biometric identification enough?</p>
+              <p>How many factors in the movie?</p>
+            </aside>
+          </section>
+
+          <section data-background-video="/videos/sneakers.mp4,/videos/sneakers.webm"></section>
+
+        </section>
+          
+        <section>
+
+          <section>
+            <h2>Securing the Web</h2>
+            <div class="container">
+              <div class="col fragment">
+                <ul>
+                  <li>Passwords</li>
+                  <li>Swipe Patterns</li>
+                  <li>Secret Knocks</li>
+                  <li>Access Cards</li>
+                  <li>SMS verification</li>
+                  <li>Security Fobs</li>
+                </ul>
+              </div>
+              <div class="col fragment">
+                <ul>
+                  <li>Fingerprints</li>
+                  <li>Facial Recognition</li>
+                  <li>Retinal Scans</li>
+                  <li>Voice</li>
+                  <li>Keystroke Timing</li>
+                  <li>Gait</li>
+                </ul>
+              </div>
+            </div>
+
+            <aside class="notes">
+              <p>Gait - video of you walking around your computer?</p>
+              <p>Handwriting - graphics tablet?</p>
+              <p>Not good for web auth</p>
+              <p>Voice and facial recognition are a good fit - cameras and mics.</p>
+              <p>Keystroke timing could be fun</p>
+            </aside>
+          </section>
+        
+          <section>
+            <h2>Biometrics in Mainstream Tech</h2>
+            <div class="container">
+              <div class="col fragment">
+                <p><img data-src="/images/google-fingerprint.png"/></p>
+              </div>
+              <div class="col fragment">
+                <p><img data-src="/images/iphone-fingerprint.png"/></p>
+              </div>
+              <div class="col fragment">
+                <p><img data-src="/images/iphone-facial-recognition.png"/></p>
+              </div>
+            </div>
+          </section>
+        
+          <section>
+            <h2>Device-based Biometrics</h2>
+            <div class="container">
+              <div class="col">
+                <p>Have</p>
+                <p><img data-src="/images/have.png"/></p>
+              </div>
+              <div class="col middle">
+                <p>OR</p>
+              </div>
+              <div class="col">
+                <p>Are</p>
+                <p><img data-src="/images/are.png"/></p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Device-based Biometrics</h2>
+            <div class="container">
+              <div class="col">
+                <p>Have</p>
+                <p><img data-src="/images/have.png"/></p>
+              </div>
+              <div class="col middle">
+                <p>They are hardware authenticators</p>
+                <p class="fragment">Biometrics just prove you're present</p>
+                <p class="fragment"><small>(WebAuthn makes these available to web apps!)</small></p>
+              </div>
+              <div class="col bottom">
+                <p><img data-src="/images/freeotp.png"/></p>
+              </div>
+            </div>
+          </section>
+
+        </section>
+
+        <section>
+          <h2>Disabilities</h2>
+          <div class="container">
+            <div class="col fragment">
+              <p>Permanent</p>
+              <p><img data-src="/images/disabled-permanent.gif"/></p>
+            </div>
+            <div class="col fragment">
+              <p>Temporary</p>
+              <p><img data-src="/images/disabled-temporary.jpg"/></p>
+            </div>
+            <div class="col fragment">
+              <p>Environmental</p>
+              <p><img data-src="/images/disabled-environmental.png"/></p>
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Bonus Factor</h2>
+          <div class="container">
+            <div class="col">
+              <p>Something you...</p>
+              <div class="container">
+                <div class="col">
+                  <p>Know</p>
+                  <p><img data-src="/images/know.png" class="thumbnail"/></p>
+                </div>
+                <div class="col">
+                  <p>Have</p>
+                  <p><img data-src="/images/have.png" class="thumbnail"/></p>
+                </div>
+                <div class="col">
+                  <p>Are</p>
+                  <p><img data-src="/images/are.png" class="thumbnail"/></p>
+                </div>
+              </div>
+            </div>
+            <div class="col fragment">
+              <p>Some<em>where</em> you are</p>
+              <p><img data-src="/images/pinpoint-on-map.png"/></p>
+            </div>
+          </div>
+              
+          <aside class="notes">
+            <p> Use as a whitelist or blacklist.</p>
+            <p>Only allow access if someone's in a particular building.</p>
+            <p>Block access to someone who travelled 4000km in the last 10 minutes.</p>
+          </aside>
+        </section>
+        
+        <section>
+          <h1>🎊 🎈 💃 Demos! 🕺 🎉 🎈<br/><br/></h1>
+          <div class="container">
+            <div class="col">
+              <p><img data-src="/images/ms-speaker-recog.png" class="thumbnail"/></p>
+              <h6>Microsoft<br/>Speaker<br/>Recognition</h6>
+            </div>
+            <div class="col">
+              <p><img data-src="/images/voiceit.png" class="thumbnail"/></p>
+              <h6>VoiceIt</h6>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>Thank you!</h1>
+          <h2>Questions?</h2>
+          <div class="container">
+            <div class="col">
+              <img data-src="/images/bendechrai.jpg"/>
+            </div>
+            <div class="col middle">
+              <p>Ben Dechrai</p>
+              <p>@bendechrai on Twitter and Instagram</p>
+              <p>Developer Advocate at Auth0</p>
+            </div>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        width: '100%',
+        height: '100%',
+        controls: false,
+        progress: false,
+        hash: true,
+        fragmentInURL: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+
+    <style type="text/css">
+        /* 1. Style header/footer <div> so they are positioned as desired. */
+        #header-left {
+            font-size: 2rem;
+            position: absolute;
+            top: 1%;
+            left: 1%;
+        }
+        #header-right {
+            font-size: 2rem;
+            position: absolute;
+            top: 1%;
+            right: 1%;
+        }
+        #footer-left {
+            font-size: 2rem;
+            position: absolute;
+            bottom: 1%;
+            left: 1%;
+        }
+    </style>
+
+    <!-- 2. Create hidden header/footer <div> -->
+    <div id="hidden" style="display:none;">
+        <div id="header">
+            <div id="header-left">https://ben.sc/</div>
+            <div id="header-right">@bendechrai</div>
+            <div id="footer-left"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+        var header = $('#header').html();
+        if ( window.location.search.match( /print-pdf/gi ) ) {
+            Reveal.addEventListener( 'ready', function( event ) {
+               $('.slide-background').append(header);
+            });
+        }
+        else {
+            $('div.reveal').append(header);
+       }
+    </script>
+
+	</body>
+</html>
